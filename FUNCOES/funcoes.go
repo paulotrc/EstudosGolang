@@ -10,6 +10,18 @@ func main() {
 
 	fmt.Println(calculosOperadores(20, 10))
 
+	resSoma, resSubtracao, ResMultiplicacao, _ := calculosOperadores(20, 10)
+
+	fmt.Println(resSoma, resSubtracao, ResMultiplicacao)
+
+	var f = func(texto string) string {
+		fmt.Println(texto)
+		return texto
+	}
+
+	resultado := f("Texto para imprimir.")
+	fmt.Println(resultado)
+
 }
 
 func somar(var1 int8, var2 int8) int8 {
